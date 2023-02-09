@@ -1,0 +1,35 @@
+body {
+  padding: 32px;
+  margin: 0px;
+  background-color: rgb(23, 23, 43) !important;
+  color: #fafafa !important;
+}
+
+a {
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li * {
+  font-size: 20px;
+}
+
+li {
+  margin-top: 32px;
+}
+
+li:has(a + strong) strong,
+a {
+  color: rgb(127, 127, 225);
+}
+
+li:has(a + strong) strong:hover,
+a:hover {
+  filter: brightness(1.1);
+}
+
+li:has(a + a) a:nth-child(1) {
+  color: rgb(154, 154, 207);
+}
